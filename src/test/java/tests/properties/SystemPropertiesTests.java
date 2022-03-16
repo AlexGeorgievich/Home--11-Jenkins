@@ -36,6 +36,11 @@ public class SystemPropertiesTests {
         System.out.println(browser);
         System.out.println(browserVersion);
         System.out.println(browserSize);
+    }
 
+    @Test
+    @Tag("smoke")
+    void someTest7(){
+        System.out.println("You can say - " + System.getProperty("some_text"," === HELLO +++"));
     }
 }
