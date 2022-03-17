@@ -16,16 +16,16 @@ java \
 "-Denv=${ENVIRONMENT}" \
 "-DreportLink=${BUILD_URL}" \
 "-Dcomm=Any comment here" \
-"-Dconfig.file=notifications/telegram_config.json \
+"-Dconfig.file=notifications/telegram_config.json" \
 -jar notifications/allure-notifications-3.1.2.jar
 
 // Local
 java \
-"-DprojectName=${PROJECT_NAME}" \
-"-Denv=${ENVIRONMENT}" \
-"-DreportLink=${BUILD_URL}" \
+"-DprojectName=as you can see - Local test run " \
+"-Denv=Production" \
+"-DreportLink=course QA.GURU/" \
 "-Dcomm=Any comment here" \
-"-Dconfig.file=notifications/telegram_config.json \
+"-Dconfig.file=notifications/telegram_config.json" \
 -jar notifications/allure-notifications-3.1.2.jar
 
 //
